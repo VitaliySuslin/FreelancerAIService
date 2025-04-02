@@ -11,13 +11,13 @@ class Settings(BaseSettings):
     gpt_model: str = "gpt-4o-mini"
     """Default GPT model to use for text generation."""
 
-    dataset_path: str = "data/freelancer-earnings-and-job-trends"
+    dataset_path: str = "data/freelancer-earnings-and-job-trends/freelancer_earnings_bd.csv"
     """Path to store and load the dataset."""
 
-    kaggle_username: str = "palapalaru"
+    kaggle_username: str = "ЗАМЕНИТЬ"
     """Kaggle username for dataset download."""
 
-    kaggle_key: str = "f11b2098de8f0e61bd3a439bc2887661"
+    kaggle_key: str = "ЗАМЕНИТЬ"
     """Kaggle API key for authentication."""
 
     class Config:
@@ -28,5 +28,4 @@ class Settings(BaseSettings):
         env_file_encoding = "utf-8"
 
 
-# Global settings instance
 settings = Settings()
